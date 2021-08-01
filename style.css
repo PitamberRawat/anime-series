@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, hsla(360, 100%, 57%, 90%),hsla(240, 100%, 50%, 50%) );
+}
+
+h1{
+    color: #283747;
+    font-weight: 1000;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-bottom:  1rem ;
+    padding-top: .3rem ;
+    background: #b73225;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+.cards{
+     margin: 2rem;
+     border: 3px solid white;
+     border-radius: 4px;
+}
+
+.card, .cardInfo, .cardTitle, .cardCategory, a, img{
+    background: #ccc;
+}
+
+.card{
+    text-align: center;
+    padding: .8rem;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.9);
+}
+
+.cardInfo{
+    text-align: center;
+    padding-top: .8rem;
+}
+
+img{
+    margin-top: .11rem;
+    padding-top: 1rem;
+}
+
+img:hover{
+    transform: scale(112%) ;
+}
+
+.cardCategory{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+}
+
+h3{
+    padding: .4rem 0;
+    font-size: 1.6rem;
+}
+
+button{
+    color: #fff;
+    background: linear-gradient(to right, hsla(240, 100%, 50%, 50%), hsla(360, 100%, 57%, 90%));
+    font-size: 1rem;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+button:hover{
+    color: #000;
+    background: linear-gradient(to right, hsla(360, 100%, 57%, 90%),hsla(240, 100%, 50%, 50%) );
+    transform: scale(95%);
+    font-size: 1.1rem;
+}
+
+@media(min-width:1075px){
+    .container{
+        display: grid;
+        margin: 0  4.8rem;
+        grid-template-columns: repeat(auto-fit, minmax(325px,1fr));
+    }
+    
+}
+
+@media(min-width:650px){
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    }
+    h1{
+        padding: 1.6rem;
+        font-size: 2rem;
+    }
+    .card{
+        padding: 1rem;
+    }
+}
+
+@media(min-width:550px){
+    h1{
+        padding: 1.2rem;
+        font-size: 1.8rem;
+    }
+}
+@media(min-width: 420px){
+    h1{
+        padding: 1.2rem;
+        font-size: 1.8rem;
+    }
+}
